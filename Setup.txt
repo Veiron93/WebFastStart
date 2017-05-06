@@ -1,0 +1,16 @@
+1. npm i gulp-cli -g (Глобальная утановка Gulp (ставится 1 раз))
+2. npm init
+3. npm i --save-dev gulp (Установка Gulp в проект)
+4. npm i --save-dev gulp-sass (Локальная установка Sass)
+5. npm i --save-dev browser-sync (Локальная установка Browser-sync)
+6. npm i gulp-autoprefixer (Авто префикс)
+7. npm i gulp-cssnano (Чистка CSS)
+8. npm i --save-dev gulp-uncss (Удаление неиспользованного CSS)
+9. npm i gulp-uglifyjs (Минификация JS)
+10. npm i del --save-dev (Удаление предыдущей сборки)
+
+
+
+Дополнительно:
+
+npm rm --global gulp (Удаляет глобальный Gulp)

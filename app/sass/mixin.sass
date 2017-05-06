@@ -1,0 +1,20 @@
+﻿@mixin xs_and_md
+	@media (max-width: 991px) 
+		@content
+
+@mixin screen768
+	@media (min-width: 768px) and (max-width: 991px) 
+		@content
+
+@mixin screen767
+	@media (max-width: 767px) 
+		@content
+
+@mixin radius ($radius)
+	border-radius: $radius
+
+@mixin transit ($times)
+	transition: all $times ease
+
+@mixin shadow ($values)
+	box-shadow: $values

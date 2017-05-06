@@ -1,4 +1,4 @@
-﻿@mixin xs_and_md
+﻿@mixin phone_and_tablet
 	@media (max-width: 991px) 
 		@content
 
@@ -10,11 +10,10 @@
 	@media (max-width: 767px) 
 		@content
 
-@mixin radius ($radius)
-	border-radius: $radius
+@mixin screen480
+	@media (max-width: 480px)
+		@content
 
-@mixin transit ($times)
-	transition: all $times ease
-
-@mixin shadow ($values)
-	box-shadow: $values
+@mixin screen320
+	@media (max-width: 320px)
+		@content

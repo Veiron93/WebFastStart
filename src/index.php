@@ -6,28 +6,28 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 	<title></title>
-	<meta name="description" content=""/>
-	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
 
 	<!--Favicon-->
-	<link rel="shortcut icon" href="/img/0-elements/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
-	<!--Мобильные линки-->
-	<meta name="msapplication-TileColor" content=""/>
+	<!--Цвета-->
+	<meta name="msapplication-TileColor" content="">
 	<meta name="theme-color" content="">
 	
 	<!--APPLE META-->
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="apple-touch-icon" href="/img/1-mobile_ico/76.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/img/1-mobile_ico/76.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/img/1-mobile_ico/120.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/img/1-mobile_ico/152.png">
+	<link rel="apple-touch-icon" href="/img/touch-icons/76.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/touch-icons/76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/touch-icons/120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/touch-icons/152.png">
 
 	<!--OGP-->
-	<meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:image" content="img/0-elements/ogp.png"/>
+	<meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="img/0-elements/ogp.png">
 
     <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 </head>

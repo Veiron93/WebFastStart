@@ -4,20 +4,14 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
 	<title></title>
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
 
-	<!--Style links-->
-	<link rel="stylesheet" href="/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/css/magnific-popup.css">
+	<!--Favicon-->
 	<link rel="shortcut icon" href="/img/0-elements/favicon.png" type="image/x-icon">
 
-	<!--Шрифты-->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&amp;subset=cyrillic" rel="stylesheet">
-	
 	<!--Мобильные линки-->
 	<meta name="msapplication-TileColor" content=""/>
 	<meta name="theme-color" content="">
@@ -34,14 +28,22 @@
     <meta property="og:description" content=""/>
     <meta property="og:url" content=""/>
     <meta property="og:image" content="img/0-elements/ogp.png"/>
+
+    <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 </head>
 
 <body>
+
 <div class="wrapper">
 	<div class="content">
-	
+		<p>hello</p>
 	</div>
 </div>
-<?php include("js/connect.html"); ?>
+
+<link rel="stylesheet" href="/css/libs.css">
+<link rel="stylesheet" href="/css/style.css">
+<script src="./libs/libs.js"></script>
+<script src="./js/scripts.js"></script>
+
 </body>
 </html>

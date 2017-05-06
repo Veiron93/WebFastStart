@@ -2,4 +2,8 @@
 /dist/
 /.git/
 /src/css/
-/**/*.psd
+/src/img/*.psd
+/src/img/*.png
+/src/img/*.jpg
+/src/img/*.jpeg
+/src/img/*.ico

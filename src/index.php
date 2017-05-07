@@ -27,7 +27,7 @@
 	<meta property="og:title" content="">
     <meta property="og:description" content="">
     <meta property="og:url" content="">
-    <meta property="og:image" content="img/0-elements/ogp.png">
+    <meta property="og:image" content="img/ogp.png">
 
     <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 </head>
@@ -41,6 +41,7 @@
 </div>
 
 <link rel="stylesheet" href="/css/libs.css">
+<link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
 <script src="./libs/libs.js"></script>
 <script src="./js/scripts.js"></script>

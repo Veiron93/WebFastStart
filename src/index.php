@@ -36,15 +36,16 @@
 
 <div class="wrapper">
 	<div class="content">
-		<p>hello</p>
+		<p>hello!</p>
 	</div>
 </div>
+
 
 <link rel="stylesheet" href="/css/libs.css">
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
-<script src="./libs/libs.js"></script>
-<script src="./js/scripts.js"></script>
+<script src="./js/libs.js"></script>
+<script src="./js/common.js"></script>
 
 </body>
 </html>

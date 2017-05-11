@@ -36,16 +36,25 @@
 
 <div class="wrapper">
 	<div class="content">
-		<p>hello!</p>
+		<div class="container">
+			<div class="row">
+				<p>hello2!</p>
+			</div>
+		</div>
+		
 	</div>
 </div>
 
-
-<link rel="stylesheet" href="/css/libs.css">
+<!-- build:css css/style.min.css -->
+<link rel="stylesheet" href="/css/common-libs.css">
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/style.css">
-<script src="./js/libs.js"></script>
+ <!-- endbuild -->
+
+<!-- build:js js/scripts.min.js -->
+<script src="./libs/common-libs.js"></script>
 <script src="./js/common.js"></script>
+<!-- endbuild -->
 
 </body>
 </html>

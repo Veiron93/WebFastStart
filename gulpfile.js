@@ -44,9 +44,14 @@ gulp.task('scripts-libs', function(){
 })
 
 
+// del libs
+gulp.task('del-libs', function(){
+	del.sync(['src/libs/common-libs.js', 'src/css/common-libs.css']);
+})
+
 // таблицы стилей
 gulp.task('sass', function(){
-	return gulp.src(['src/**/**/**/**/*.sass', '!src/sass/vars.sass', '!src/sass/default.sass', '!src/sass/mixins.sass'])
+	return gulp.src(['src/sass/**/**/**/*.sass', '!src/sass/vars.sass', '!src/sass/default.sass', '!src/sass/mixins.sass'])
 	.pipe(plumber({errorHandler: notify.onError("ERROR: <%= error.message %>")}))
 	.pipe(sass())
 	.pipe(rename({dirname: ''}))
@@ -68,6 +73,7 @@ gulp.task('js', function(){
 })
 
 
+
 // запускать 1 раз или при добавлении новых библиотек 
 gulp.task('libs', ['style-libs', 'scripts-libs']);
 
@@ -81,8 +87,8 @@ gulp.task('clear', function () {
 // default task
 gulp.task('default', ['browser-sync', 'sass', 'js'], function() {
 
-	gulp.watch('src/**/**/**/*.sass',['sass'])
-	gulp.watch('src/**/*.+(php|html|js)',browserSync.reload)
+	gulp.watch('src/sass/**/**/*.sass',['sass'])
+	gulp.watch('src/**/**/*.+(php|html|js)',browserSync.reload)
 });
 
 
@@ -108,13 +114,13 @@ gulp.task('html:build', function() {
 });
 
 gulp.task('style:build', function() {
-	return gulp.src(['dist/css/style.min.css'])
+	return gulp.src(['dist/**/**/**/*.css'])
 	.pipe(csso())
-	.pipe(gulp.dest('dist/css'))
+	.pipe(gulp.dest('dist'))
 });
 
 gulp.task('js:build', function() {
-	return gulp.src(['dist/js/scripts.min.js'])
+	return gulp.src(['dist/js/*.js'])
 	.pipe(uglify())
 	.pipe(gulp.dest('dist/js'))
 });

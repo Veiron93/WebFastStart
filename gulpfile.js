@@ -15,7 +15,9 @@ var gulp = require('gulp'),
 	htmlmin = require('gulp-htmlmin'),
 	csso = require('gulp-csso'),
 	runSequence = require('run-sequence'),
-	cache = require('gulp-cache');
+	cache = require('gulp-cache'),
+	sitemap = require('gulp-sitemap'),
+	robots = require('gulp-robots');
 
 
 
@@ -132,12 +134,32 @@ gulp.task('imagemin:build', function() {
 	.pipe(gulp.dest('dist/img'))
 });
 
+gulp.task('robots', function () {
+    gulp.src('dist/index.+(php|html)')
+        .pipe(robots({
+            useragent: '*',
+            disallow: ['/admin', '/db'],
+            sitemap: ['домен'] // указать домен
+        }))
+        .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('sitemap', function () {
+	gulp.src('dist/*.+(php|html)',{
+		read: false
+	})
+	.pipe(sitemap({
+		siteUrl: 'домен' // указать домен
+	}))
+	.pipe(gulp.dest('dist/'));
+});
+
 
 
 // build task
 gulp.task('build', ['del:build', 'useref:build'], function(callback) {
 
-	runSequence(['style:build', 'js:build', 'imagemin:build'],['html:build'], callback)
+	runSequence(['style:build', 'js:build', 'imagemin:build'],['html:build'], ['robots'], ['sitemap'], callback)
 
 	var buildFiles = gulp.src([
 			'src/**/**/**/*.*',

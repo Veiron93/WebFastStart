@@ -34,7 +34,9 @@
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
+    "gulp-robots": "^2.0.4",
     "gulp-sass": "^3.1.0",
+    "gulp-sitemap": "^4.2.0",
     "gulp-uglifyjs": "^0.6.2",
     "gulp-useref": "^3.1.2",
     "run-sequence": "^1.2.2"
